@@ -1,0 +1,21 @@
+#TurnSignal {
+    float: left;
+    font-size: 90px;
+    margin: 0px 0px 0px 8px;
+}
+
+#TurnDiv {
+    width: 115px;
+    height: 145px;
+    position: fixed;
+    margin-left: 380px;
+    margin-top: 150px;
+    background-color: rgb(233, 233, 216);
+    border-radius: 20px;
+}
+
+#TurnID {
+    float: left;
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+}

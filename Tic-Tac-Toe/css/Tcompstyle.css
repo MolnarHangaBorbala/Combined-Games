@@ -1,0 +1,266 @@
+html {
+    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-family: monospace;
+}
+
+body {
+    font-size: 18px;
+    background-color: beige;
+}
+
+#navbar,
+.OuterContainer,
+.OuterScoreContainer,
+#Nextbtn,
+.gameCubes,
+.innerGameCont {
+    box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gameCubes {
+    transition: background-color 0.3s;
+    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+}
+
+#Nextbtn {
+    transition: background-color 0.3s;
+    transition: opacity 0.3s;
+}
+
+#TurnDiv h1 {
+    transition: color 0.3s;
+}
+
+#Nextbtn:hover {
+    background-color: rgb(224, 224, 224);
+    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+title {
+    color: beige;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(41, 41, 41, 0.877);
+    height: fit-content;
+    color: beige;
+    padding: 2px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.outerGameCont {
+    position: relative;
+    background-color: rgb(233, 233, 216);
+    height: 500px;
+    margin-top: 50px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 25px;
+    border-radius: 20px;
+}
+
+.innerGameCont {
+    background-color: rgb(204, 204, 193);
+    height: 475px;
+    margin: 0px auto;
+    width: 1105px;
+    position: relative;
+    padding-top: 25px;
+    border-radius: 20px;
+}
+
+.Game {
+    margin-right: 100px;
+    margin-left: auto;
+    height: 450px;
+    width: 500px;
+}
+
+.gameCubes {
+    height: 146px;
+    background-color: rgb(85, 84, 85);
+    width: 162px;
+    float: left;
+    border-radius: 10px;
+    font-size: 130px;
+    text-align: center;
+    color: beige;
+}
+
+.blinkAnim {
+    animation: blink 2.6s ease-in-out infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+}
+
+.gameCubes:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.top {
+    border-top: 3px beige solid;
+}
+
+.middle,
+.bottom,
+.top {
+    border-bottom: 3px beige solid;
+    border-right: 3px beige solid;
+}
+
+.left {
+    border-left: 3px beige solid;
+}
+
+.OuterScoreContainer {
+    background-color: rgb(46, 46, 46);
+    width: 260px;
+    float: left;
+    height: 310px;
+    padding: 0px 18px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px black solid;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#ScoreBoardID {
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.ScoreContainer {
+    background-color: rgb(78, 78, 78);
+    height: 225px;
+    border: 1px black solid;
+    overflow: hidden;
+}
+
+#ResultText,
+.ScoreContainer li {
+    padding-bottom: 4px;
+    border-bottom: 1px black solid;
+    list-style-type: none;
+    margin-bottom: 2px;
+    color: #f0f8ff;
+}
+
+.ScoreContainer li {
+    border-bottom: 1px grey solid;
+    text-shadow: 1px 0px 1px #313131bd, 0px 1px 1px #3b3a3adb, 2px 1px 1px #313131bd;
+}
+
+.log {
+    margin: 0px 0px;
+    text-align: left;
+    color: aliceblue;
+    font-size: small;
+}
+
+.LogContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: grey;
+    border-bottom: 1px black solid;
+}
+
+.reset {
+    background-color: grey;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 2px 4px;
+    font-family: monospace;
+    color: rgb(212, 212, 212);
+    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+}
+
+.reset:hover {
+    color: rgb(255, 255, 255);
+}
+
+#LogBook {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0;
+}
+
+#LogBook li {
+    text-align: left;
+    padding: 0px 0px 5px 10px;
+    font-size: small;
+    margin-top: 3px;
+}
+
+#ResultText {
+    padding: 6px;
+    font-size: x-large;
+    background-color: rgb(46, 46, 46);
+    margin-top: 0px;
+}
+
+#Nextbtn {
+    margin-top: 35px;
+    height: 70px;
+    width: 120px;
+    border-radius: 15px;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.opa {
+    opacity: 0.3;
+}
+
+#X {
+    color: crimson;
+}
+
+#O {
+    color: dodgerblue;
+}
+
+#dash {
+    color: beige;
+}
+
+#exitIcon,
+#speakerIcon {
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    float: left;
+}
+
+#exitIcon:hover,
+#speakerIcon:hover {
+    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    background-color: rgba(102, 102, 102, 0.76);
+}
