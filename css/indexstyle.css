@@ -1,0 +1,86 @@
+html {
+    background-color: beige;
+    font-family: monospace;
+    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.CustomNav,
+.innerContainer1,
+.innerContainer2,
+.outerContainer {
+    box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.CustomNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 25px;
+    height: 80px;
+}
+
+.CustomNav a {
+    position: absolute;
+    right: 15px;
+}
+
+h1 {
+    color: beige;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.outerContainer {
+    width: 950px;
+    background-color: rgb(202, 202, 182);
+    height: fit-content;
+    margin: 50px auto;
+    padding: 20px 0px;
+    border-radius: 30px;
+}
+
+.innerContainer1,
+.innerContainer2 {
+    height: 250px;
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+.innerContainer1 {
+    background-color: rgb(81, 148, 145);
+}
+
+.innerContainer2 {
+    background-color: rgb(74, 76, 139);
+}
+
+#Rbtn,
+#Tbtn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: rgba(255, 255, 255, 0.26);
+    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+}
+
+#Rbtn:hover,
+#Tbtn:hover {
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+}
