@@ -136,10 +136,17 @@ h2 {
     -o-transform: rotate(-30deg);
 }
 
-.innerContainer2:hover .X {
+.innerContainer2:hover .X,
+.innerContainer2:hover .O {
     transform: rotate(25deg);
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
     -ms-transform: rotate(25deg);
     -o-transform: rotate(25deg);
+}
+
+.innerContainer1:hover h2,
+.innerContainer2:hover h2 {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1) rotate(-3deg);
 }
