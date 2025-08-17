@@ -39,7 +39,8 @@ html {
 h1 {
     color: beige;
     font-family: 'Pixel', monospace;
-    font-size: 40px;
+    font-size: 45px;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -89,7 +90,7 @@ h2 {
     font-size: 30px;
     cursor: pointer;
     border-radius: 30px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.7s, color 0.5s;
     background-color: rgba(255, 255, 255, 0.26);
     cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
     z-index: 10;
