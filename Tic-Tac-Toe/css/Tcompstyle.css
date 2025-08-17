@@ -56,13 +56,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(41, 41, 41, 0.877);
-    height: fit-content;
-    color: beige;
-    padding: 2px;
-    text-align: center;
-    border-radius: 20px;
     padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 25px;
+    height: 80px;
 }
 
 .outerGameCont {

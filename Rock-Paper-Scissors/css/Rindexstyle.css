@@ -120,6 +120,7 @@ h1 {
     margin-left: 485px;
     font-family: 'Pixel', monospace;
     letter-spacing: 1px;
+    padding-top: 8px;
 }
 
 .Playbtn:hover {
