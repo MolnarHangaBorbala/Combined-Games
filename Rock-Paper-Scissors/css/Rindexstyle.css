@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url(../../font/Pixel.otf) format('truetype');
+}
+
 html {
     cursor: url(../img/cursor/pixel.cur) 1 1, auto;
     user-select: none;
@@ -40,9 +45,10 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-size: 30px;
     color: beige;
+    font-family: 'Pixel', monospace;
+    font-size: 40px;
+    letter-spacing: 3px;
 }
 
 .OuterContainer {
@@ -110,9 +116,10 @@ h1 {
     height: 70px;
     width: 120px;
     border-radius: 15px;
-    font-family: cursive;
-    font-size: 25px;
+    font-size: 40px;
     margin-left: 485px;
+    font-family: 'Pixel', monospace;
+    letter-spacing: 1px;
 }
 
 .Playbtn:hover {

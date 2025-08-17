@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url(../../font/Pixel.otf) format('truetype');
+}
+
 html {
     cursor: url(../img/cursor/pixel.cur) 1 1, auto;
     user-select: none;
@@ -24,6 +29,7 @@ body {
 .gameCubes {
     transition: background-color 0.3s;
     cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    font-family: 'pixel', monospace;
 }
 
 #Nextbtn {
@@ -40,11 +46,10 @@ body {
 }
 
 h1 {
-    font-size: 30px;
-}
-
-title {
     color: beige;
+    font-family: 'Pixel', monospace;
+    font-size: 40px;
+    letter-spacing: 3px;
 }
 
 #navbar {
@@ -95,7 +100,7 @@ title {
     width: 162px;
     float: left;
     border-radius: 10px;
-    font-size: 130px;
+    font-size: 140px;
     text-align: center;
     color: beige;
 }
@@ -166,7 +171,8 @@ title {
     border-bottom: 1px black solid;
     list-style-type: none;
     margin-bottom: 2px;
-    color: #f0f8ff;
+    color: aliceblue;
+    font-family: 'Pixel', monospace;
 }
 
 .ScoreContainer li {
@@ -213,7 +219,7 @@ title {
 #LogBook li {
     text-align: left;
     padding: 0px 0px 5px 10px;
-    font-size: small;
+    font-size: normal;
     margin-top: 3px;
 }
 
@@ -229,8 +235,10 @@ title {
     height: 70px;
     width: 120px;
     border-radius: 15px;
-    font-family: cursive;
-    font-size: 25px;
+    padding-top: 8px;
+    font-size: 40px;
+    font-family: 'Pixel', monospace;
+    letter-spacing: 1px;
 }
 
 .opa {

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('../font/Pixel.otf') format('truetype');
+}
+
 html {
     background-color: beige;
     font-family: monospace;
@@ -33,11 +38,14 @@ html {
 
 h1 {
     color: beige;
+    font-family: 'Pixel', monospace;
+    font-size: 40px;
 }
 
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    font-family: 'Pixel', monospace;
 }
 
 .outerContainer {
@@ -47,6 +55,7 @@ h2 {
     margin: 50px auto;
     padding: 20px 0px;
     border-radius: 30px;
+    position: relative;
 }
 
 .innerContainer1,
@@ -55,6 +64,12 @@ h2 {
     width: 800px;
     margin: 20px auto;
     border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .innerContainer1 {
@@ -77,10 +92,53 @@ h2 {
     transition: background-color 0.3s, color 0.3s;
     background-color: rgba(255, 255, 255, 0.26);
     cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    z-index: 10;
+    position: absolute;
 }
 
 #Rbtn:hover,
 #Tbtn:hover {
     background-color: rgba(0, 0, 0, 0.26);
     color: white;
+}
+
+.X,
+.O,
+.RPS-image {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 70px;
+    opacity: 0.3;
+    margin: 20px 10px;
+    transition: transform 0.3s;
+}
+
+.RPS-image {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.Rrow,
+.Trow {
+    margin: 10px;
+}
+
+.innerContainer1:hover .RPS-image {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+
+.innerContainer2:hover .X {
+    transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
 }

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url(../../font/Pixel.otf) format('truetype');
+}
+
 html {
     cursor: url(../img/cursor/pixel.cur) 1 1, auto;
     user-select: none;
@@ -41,8 +46,10 @@ body {
 }
 
 h1 {
-    font-size: 30px;
     color: beige;
+    font-family: 'Pixel', monospace;
+    font-size: 40px;
+    letter-spacing: 3px;
 }
 
 .OuterContainer {
@@ -101,6 +108,7 @@ h1 {
     list-style-type: none;
     margin-bottom: 2px;
     color: aliceblue;
+    font-family: 'Pixel', monospace;
 }
 
 .ScoreContainer li {
@@ -146,7 +154,7 @@ h1 {
 #LogBook li {
     text-align: left;
     padding: 0px 0px 5px 10px;
-    font-size: small;
+    font-size: normal;
     margin-top: 3px;
 }
 
@@ -205,8 +213,10 @@ h1 {
     height: 70px;
     width: 120px;
     border-radius: 15px;
-    font-family: cursive;
-    font-size: 25px;
+    font-size: 37px;
+    font-family: 'Pixel', monospace;
+    letter-spacing: 1px;
+    padding-top: 8px;
 }
 
 .Playbtn:hover {
