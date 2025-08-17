@@ -13,10 +13,21 @@ let gameOver = false;
 let playerTurn = true;
 
 Nextbtn.classList.add('opa');
+unlink();
+
+function link() {
+    Nextbtn.classList.remove('no-link');
+    Nextbtn.classList.add('link');
+}
+
+function unlink() {
+    Nextbtn.classList.remove('link');
+    Nextbtn.classList.add('no-link');
+}
 
 Nextbtn.addEventListener('click', () => {
-    Nextbtn.disabled = true;
     Nextbtn.classList.add('opa');
+    unlink();
 });
 
 GameCubes.forEach((cube) => {
@@ -81,7 +92,7 @@ function endGame(winner) {
     }
     updateScoreboard();
     logResult(winner);
-    Nextbtn.disabled = false;
+    link();
     Nextbtn.classList.remove('opa');
 }
 
@@ -140,13 +151,12 @@ Nextbtn.addEventListener('click', () => {
 });
 
 ResetBtn.addEventListener('click', () => {
-    updateScoreboard();
     resetBoard();
     clearLog();
     playerScore = 0;
     computerScore = 0;
+    updateScoreboard();
     ResultText.textContent = 'Play!';
-    Nextbtn.disabled = true;
     Nextbtn.classList.remove('opa');
 });
 

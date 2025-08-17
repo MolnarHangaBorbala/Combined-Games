@@ -37,7 +37,6 @@ body {
 
 #Nextbtn:hover {
     background-color: rgb(224, 224, 224);
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
 }
 
 h1 {
@@ -236,6 +235,7 @@ title {
 
 .opa {
     opacity: 0.3;
+    pointer-events: none;
 }
 
 #X {
@@ -263,4 +263,12 @@ title {
 #speakerIcon:hover {
     cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
     background-color: rgba(102, 102, 102, 0.76);
+}
+
+.no-link {
+    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+}
+
+.link {
+    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
 }

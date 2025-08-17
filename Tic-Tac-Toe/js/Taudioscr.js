@@ -13,6 +13,16 @@ targets.forEach(item => {
     });
 });
 
+function speakerIndex() {
+    if (menuBgMusic.paused) {
+        menuBgMusic.play();
+        speakerIcon.src = "img/speakerBtn.png";
+    } else {
+        menuBgMusic.pause();
+        speakerIcon.src = "img/muteBtn.png";
+    }
+}
+
 function speaker() {
     if (menuBgMusic.paused) {
         menuBgMusic.play();
