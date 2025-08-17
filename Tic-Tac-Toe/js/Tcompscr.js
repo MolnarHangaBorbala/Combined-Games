@@ -4,6 +4,7 @@ const ScoreText = document.getElementById("ScoreBoardID");
 const ResultText = document.getElementById("ResultText");
 const Nextbtn = document.getElementById("Nextbtn");
 const ResetBtn = document.getElementById("Resetbtn");
+const ClickSound = document.getElementById("clickSound");
 const X = document.getElementById("X");
 const O = document.getElementById("O");
 
@@ -33,9 +34,12 @@ Nextbtn.addEventListener('click', () => {
 GameCubes.forEach((cube) => {
     cube.addEventListener('click', () => {
         if (!gameOver && playerTurn && cube.innerHTML === '') {
+            ClickSound.currentTime = 0;
+            ClickSound.play();
+
             cube.innerHTML = 'X';
-            playerTurn = false;
             cube.style.color = "crimson";
+            playerTurn = false;
 
             if (checkWin('X')) return endGame('Player');
             if (isDraw()) return endGame('Draw');
@@ -44,7 +48,6 @@ GameCubes.forEach((cube) => {
                 placeRandomO();
                 if (checkWin('O')) return endGame('Computer');
                 if (isDraw()) return endGame('Draw');
-
                 playerTurn = true;
             }, 500);
         }

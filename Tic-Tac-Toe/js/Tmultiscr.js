@@ -5,6 +5,7 @@ const ResultText = document.getElementById("ResultText");
 const Nextbtn = document.getElementById("Nextbtn");
 const ResetBtn = document.getElementById("Resetbtn");
 const TurnSignal = document.getElementById("TurnSignal");
+const ClickSound = document.getElementById("clickSound"); 
 
 let player1Score = 0;
 let player2Score = 0;
@@ -24,6 +25,9 @@ Nextbtn.addEventListener('click', () => {
 GameCubes.forEach((cube) => {
     cube.addEventListener('click', () => {
         if (!gameOver && cube.innerHTML === '') {
+            ClickSound.currentTime = 0;
+            ClickSound.play();
+
             cube.innerHTML = player1Turn ? 'X' : 'O';
             cube.style.color = player1Turn ? "crimson" : "dodgerblue";
 
@@ -36,6 +40,7 @@ GameCubes.forEach((cube) => {
         }
     });
 });
+
 
 function updateTurnSignal() {
     if (player1Turn) {
