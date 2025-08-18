@@ -47,4 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+    if (window.innerHeight <= 720) {
+        outerContainerID.style.marginTop = "30px";
+    }
 });

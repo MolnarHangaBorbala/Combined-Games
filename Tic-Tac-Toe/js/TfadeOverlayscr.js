@@ -35,4 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+    if (window.innerHeight <= 720) {
+        outerGameContID.style.marginTop = "30px";
+    }
 });
+

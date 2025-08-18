@@ -35,4 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+    if (window.innerHeight <= 720) {
+        OuterContID.style.marginTop = "30px";
+    }
 });

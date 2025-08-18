@@ -1,0 +1,25 @@
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .outerContainer {
+        width: 100%;
+    }
+
+    .innerContainer1,
+    .innerContainer2 {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .outerContainer {
+        width: 100%;
+    }
+
+    .innerContainer1,
+    .innerContainer2 {
+        width: 90%;
+        padding: 10px;
+    }
+}
