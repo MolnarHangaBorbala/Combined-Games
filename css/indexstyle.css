@@ -148,5 +148,5 @@ h2 {
 .innerContainer1:hover h2,
 .innerContainer2:hover h2 {
     transition: transform 0.3s ease-in-out;
-    transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(3deg);
 }
