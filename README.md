@@ -1,7 +1,11 @@
 # Combined-Games
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/MolnarHangaBorbala/Combined-Games)
+[![Live on Netlify](https://img.shields.io/badge/Live_on-Netlify-brightgreen?style=for-the-badge&logo=netlify&logoColor=white)](https://combined-games.netlify.app/)
 
 This repository hosts a collection of two classic browser-based games, Rock-Paper-Scissors and Tic-Tac-Toe, developed with pure HTML, CSS, and JavaScript. The project features a distinct retro, pixel-art aesthetic, complete with custom fonts, cursors, and sound effects.
+
+**Live demo:**  
+[https://combined-games.netlify.app/](https://combined-games.netlify.app/)
+
 
 ## Games Included
 
