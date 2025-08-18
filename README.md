@@ -16,6 +16,18 @@ Check it out here: [combined-games.netlify.app](https://combined-games.netlify.a
 - **Sound & Music**: Enjoy background music and effects that make each move feel satisfying.
 - **Responsive**: Works great on both desktop and mobile, so you can play anywhere.
 
+## 🚀 How to Play Locally
+
+1. Clone this repo:
+   ```sh
+   git clone https://github.com/yourusername/combined-games.git
+   ```
+2. Open `index.html` in your browser. No build steps needed!
+
+## Credits
+
+Everything here—code, graphics, and sounds—was made by me, or sourced from free assets for non-commercial use. If you spot something you love, let me know!
+
 ## 📁 Project Structure
 
 Here’s a quick look at how everything is organized:
@@ -65,15 +77,3 @@ combined/
    ├── js/
    └── sfx/
 ```
-
-## 🚀 How to Play Locally
-
-1. Clone this repo:
-   ```sh
-   git clone https://github.com/yourusername/combined-games.git
-   ```
-2. Open `index.html` in your browser. No build steps needed!
-
-## Credits
-
-Everything here—code, graphics, and sounds—was made by me, or sourced from free assets for non-commercial use. If you spot something you love, let me know!
