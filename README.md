@@ -14,7 +14,7 @@ Check it out here: [combined-games.netlify.app](https://combined-games.netlify.a
 - **Rock-Paper-Scissors**: Classic gameplay with a twist—multiplayer and single-player options, plus animated overlays and sound effects.
 - **Retro Vibes**: Every detail, from the font to the cursors, is crafted for a pixel-perfect look.
 - **Sound & Music**: Enjoy background music and effects that make each move feel satisfying.
-- **Responsive**: Works great on both desktop and mobile, so you can play anywhere.
+- **Non-Responsive**: Works great on desktop.
 
 ## 🚀 How to Play Locally
 
