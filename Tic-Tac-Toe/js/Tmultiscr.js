@@ -5,7 +5,8 @@ const ResultText = document.getElementById("ResultText");
 const Nextbtn = document.getElementById("Nextbtn");
 const ResetBtn = document.getElementById("Resetbtn");
 const TurnSignal = document.getElementById("TurnSignal");
-const ClickSound = document.getElementById("clickSound"); 
+const ClickSound = document.getElementById("clickSound");
+const ResultSound = document.getElementById("resultSound");
 
 let player1Score = 0;
 let player2Score = 0;
@@ -16,6 +17,11 @@ TurnSignal.innerHTML = `P1 <span id="TurnID">turn</span>`;
 TurnSignal.style.color = "crimson";
 
 Nextbtn.classList.add('opa');
+
+function resultSound() {
+    ResultSound.currentTime = 0;
+    ResultSound.play();
+}
 
 Nextbtn.addEventListener('click', () => {
     Nextbtn.disabled = true;
@@ -87,6 +93,7 @@ function endGame(winner, winPattern) {
 
     updateScoreboard();
     logResult(winner);
+    resultSound();
     Nextbtn.disabled = false;
     Nextbtn.classList.remove('opa');
 }

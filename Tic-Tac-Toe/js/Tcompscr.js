@@ -5,6 +5,7 @@ const ResultText = document.getElementById("ResultText");
 const Nextbtn = document.getElementById("Nextbtn");
 const ResetBtn = document.getElementById("Resetbtn");
 const ClickSound = document.getElementById("clickSound");
+const ResultSound = document.getElementById("resultSound");
 const X = document.getElementById("X");
 const O = document.getElementById("O");
 
@@ -15,6 +16,11 @@ let playerTurn = true;
 
 Nextbtn.classList.add('opa');
 unlink();
+
+function resultSound() {
+    ResultSound.currentTime = 0;
+    ResultSound.play();
+}
 
 function link() {
     Nextbtn.classList.remove('no-link');
@@ -93,9 +99,11 @@ function endGame(winner) {
     } else {
         ResultText.textContent = "Draw!";
     }
+    
     updateScoreboard();
     logResult(winner);
     link();
+    resultSound();
     Nextbtn.classList.remove('opa');
 }
 

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (outerGameContID) {
         if (isMaybeF11Fullscreen()) {
             console.log("Page loaded in likely F11 fullscreen.");
-            outerGameContID.style.marginTop = "150px";
+            outerGameContID.style.marginTop = "100px";
         } else {
             outerGameContID.style.marginTop = "50px";
         }
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (outerGameContID) {
             if (isMaybeF11Fullscreen()) {
                 console.log("User likely pressed F11 for fullscreen.");
-                outerGameContID.style.marginTop = "150px";
+                outerGameContID.style.marginTop = "100px";
             } else {
                 console.log("Not in F11 fullscreen.");
                 outerGameContID.style.marginTop = "50px";

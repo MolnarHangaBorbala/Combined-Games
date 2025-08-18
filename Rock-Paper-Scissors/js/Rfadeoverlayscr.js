@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (OuterContID) {
         if (isMaybeF11Fullscreen()) {
             console.log("Page loaded in likely F11 fullscreen.");
-            OuterContID.style.marginTop = "150px";
+            OuterContID.style.marginTop = "100px";
         } else {
             OuterContID.style.marginTop = "60px";
         }
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (OuterContID) {
             if (isMaybeF11Fullscreen()) {
                 console.log("User likely pressed F11 for fullscreen.");
-                OuterContID.style.marginTop = "150px";
+                OuterContID.style.marginTop = "100px";
             } else {
                 console.log("Not in F11 fullscreen.");
                 OuterContID.style.marginTop = "60px";
