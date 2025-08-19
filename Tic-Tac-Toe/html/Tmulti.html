@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/tic-tac-toe.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/Tcompstyle.css">
+    <link rel="stylesheet" href="../css/Tmultistyle.css">
+    <link rel="stylesheet" href="../../SHARED/fadeOverlayStyle.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a onclick="home()" class="sound-class">
+            <img src="../../SHARED/SHARED-IMG/icons/exit.png" alt="Exit icon" id="exitIcon">
+        </a>
+        <h1 id="title">Player VS Player</h1>
+        <a onclick="speaker()" class="sound-class">
+            <img src="../../SHARED/SHARED-IMG/icons/muteBtn.png" alt="Speaker icon" id="speakerIcon">
+        </a>
+    </div>
+
+    <div class="outerGameCont" id="outerGameContID">
+        <div class="innerGameCont">
+            <div class="OuterScoreContainer">
+                <div class="InnerScoreContainer">
+                    <h1 id="ScoreBoardID"><span id="X">X:0</span> <span id="dash">-</span> <span id="O">O:0</span></h1>
+                    <div class="ScoreContainer">
+                        <p id="ResultText">Play!</p>
+                        <div class="LogContainer">
+                            <p class="log">Log Book</p>
+                            <button id="Resetbtn" class="reset sound-class">Reset</button>
+                        </div>
+                        <ul id="LogBook"></ul>
+                    </div>
+                    <button id="Nextbtn" class="sound-class" disabled>Next</button>
+                </div>
+            </div>
+            <div id="TurnDiv">
+                <h1 id="TurnSignal">P1 <span id="TurnID">turn</span></h1>
+            </div>
+            <div class="Game">
+                <div id="1" class="gameCubes top left"></div>
+                <div id="2" class="gameCubes top"></div>
+                <div id="3" class="gameCubes top"></div>
+                <div id="4" class="gameCubes middle left"></div>
+                <div id="5" class="gameCubes middle"></div>
+                <div id="6" class="gameCubes middle"></div>
+                <div id="7" class="gameCubes bottom left"></div>
+                <div id="8" class="gameCubes bottom"></div>
+                <div id="9" class="gameCubes bottom"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fadeOverlay" class="fade-in-start"></div>
+
+    <audio id="clickSound" src="../../SHARED/sfx/click.mp3" preload="auto"></audio>
+    <audio id="BgMusic" src="../../SHARED/sfx/bg-music.mp3" preload="auto"></audio>
+    <audio id="resultSound" src="../../SHARED/sfx/resultSound.mp3" preload="auto"></audio>
+    <script src="../js/Tmultiscr.js"></script>
+    <script src="../../SHARED/audioscr.js"></script>
+    <script src="../../SHARED/fadeOverlayscr.js"></script>
+</body>
+
+</html>
