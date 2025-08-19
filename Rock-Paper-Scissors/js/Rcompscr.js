@@ -71,8 +71,8 @@ function addLogEntry(userChoice, computerChoice, resultText) {
 playButton.addEventListener("click", () => {
     RightPlayer.classList.add("animate");
     LeftPlayer.classList.add("animate");
-    RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
-    LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+    RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
+    LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
 
     rockButton.disabled = true;
     paperButton.disabled = true;
@@ -125,19 +125,19 @@ playButton.addEventListener("click", () => {
         }
 
         if (userChoice === "|R|") {
-            LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+            LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
         } else if (userChoice === "|P|") {
-            LeftPlayer.src = "../img/paper/no-bg-2/paper-right-no-bg-2.png";
+            LeftPlayer.src = "../img/paper/no-bg/paper-right-no-bg.png";
         } else if (userChoice === "|S|") {
-            LeftPlayer.src = "../img/scissors/no-bg-2/scissors-right-no-bg-2.png";
+            LeftPlayer.src = "../img/scissors/no-bg/scissors-right-no-bg.png";
         }
 
         if (computerChoice === "|R|") {
-            RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
+            RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
         } else if (computerChoice === "|P|") {
-            RightPlayer.src = "../img/paper/no-bg-2/paper-left-no-bg-2.png";
+            RightPlayer.src = "../img/paper/no-bg/paper-left-no-bg.png";
         } else if (computerChoice === "|S|") {
-            RightPlayer.src = "../img/scissors/no-bg-2/scissors-left-no-bg-2.png";
+            RightPlayer.src = "../img/scissors/no-bg/scissors-left-no-bg.png";
         }
 
         ScoreText.textContent = `${userScore} x ${computerScore}`;
@@ -172,8 +172,8 @@ function clearLog() {
     ResultText.classList.remove("log-win");
     ResultText.classList.remove("log-lose");
     ResultText.classList.remove("log-draw");
-    RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
-    LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+    RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
+    LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
     rockButton.style.backgroundColor = "rgba(255, 255, 255, 1)";
     paperButton.style.backgroundColor = "rgba(252, 252, 252, 1)";
     scissorsButton.style.backgroundColor = "rgba(252, 252, 252, 1)";
@@ -190,3 +190,9 @@ function home() {
         window.location.href = "../Rindex.html";
     }, 1050);
 }
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" || event.key === "Esc") {
+        home();
+    }
+});

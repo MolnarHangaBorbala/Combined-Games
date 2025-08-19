@@ -4,7 +4,7 @@
 }
 
 html {
-    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel.cur) 1 1, auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -137,7 +137,7 @@ h1 {
     border: 1px solid gray;
     padding: 2px 4px;
     font-family: monospace;
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
     color: rgb(212, 212, 212);
 }
 
@@ -183,7 +183,7 @@ h1 {
 .RPSbtn {
     margin: 0px 5px;
     border-radius: 10px;
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
     background-color: rgba(252, 252, 252, 1);
     padding: 5px;
 }
@@ -250,11 +250,11 @@ ul li {
 }
 
 .no-link {
-    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel.cur) 1 1, auto;
 }
 
 .link {
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
 }
 
 #exitIcon,
@@ -268,6 +268,6 @@ ul li {
 
 #exitIcon:hover,
 #speakerIcon:hover {
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
     background-color: rgba(102, 102, 102, 0.76);
 }

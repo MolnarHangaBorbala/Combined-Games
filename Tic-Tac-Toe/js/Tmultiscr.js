@@ -167,3 +167,9 @@ function home() {
         window.location.href = "../Tindex.html";
     }, 1050);
 }
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" || event.key === "Esc") {
+        home();
+    }
+});

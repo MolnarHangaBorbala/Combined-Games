@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Tindexstyle.css">
-    <link rel="stylesheet" href="css/TfadeOverlayStyle.css">
+    <link rel="stylesheet" href="../SHARED/fadeOverlayStyle.css">
     <link rel="icon" type="image/x-icon" href="img/tic-tac-toe.png">
     <title>Tic-Tac-Toe</title>
 </head>
@@ -13,23 +13,23 @@
 <body>
     <div class="CustomNav">
         <a onclick="home()" class="sound-class">
-            <img src="img/exit.png" alt="Exit icon" id="exitIcon">
+            <img src="../SHARED/SHARED-IMG/icons/exit.png" alt="Exit icon" id="exitIcon">
         </a>
-        <h1>Choose A Gamemode <span id="smallTitle">(Tic-Tac-Toe)</span></h1>
+        <h1>Choose A Gamemode <span id="smallTitle">(TIC-TAC-TOE)</span></h1>
         <a onclick="speakerIndex()" class="sound-class">
-            <img src="img/muteBtn.png" alt="Speaker icon" id="speakerIcon">
+            <img src="../SHARED/SHARED-IMG/icons/muteBtn.png" alt="Speaker icon" id="speakerIcon">
         </a>
     </div>
 
-    <div class="OuterContainer" id="outerGameContID">
+    <div class="OuterContainer" id="outerContainerID">
         <div class="LeftContainer">
             <button class="GamemodeBtn sound-class" id="MultiBtn" disabled>
-                <img src="img/gamemodes/pvsp-no-bg-2.png" alt="multi" style="height: 200px;">
+                <img src="../SHARED/SHARED-IMG/playervsx/no-bg/pvsp-no-bg.png" alt="multi" style="height: 200px;">
             </button>
         </div>
         <div class="RightContainer">
             <button class="GamemodeBtn sound-class" id="CompBtn" disabled>
-                <img src="img/gamemodes/pvsc-no-bg-2.png" alt="comp" style="height: 200px;">
+                <img src="../SHARED/SHARED-IMG/playervsx/no-bg/pvsc-no-bg.png" alt="comp" style="height: 200px;">
             </button>
         </div>
         <h3 id="loading">Loading<span class="dots"></span></h3>
@@ -38,11 +38,11 @@
 
     <div id="fadeOverlay" class="fade-in-start"></div>
 
-    <audio id="clickSound" src="sfx/click.mp3" preload="auto"></audio>
-    <audio id="BgMusic" src="sfx/menu-bg-music.mp3" preload="auto"></audio>
+    <audio id="clickSound" src="../SHARED/sfx/click.mp3" preload="auto"></audio>
+    <audio id="BgMusic" src="../SHARED/sfx/menu-bg-music.mp3" preload="auto"></audio>
     <script src="js/Tindexscr.js"></script>
-    <script src="js/Taudioscr.js"></script>
-    <script src="js/TfadeOverlayscr.js"></script>
+    <script src="../SHARED/audioscr.js"></script>
+    <script src="../SHARED/fadeOverlayscr.js"></script>
 </body>
 
 </html>

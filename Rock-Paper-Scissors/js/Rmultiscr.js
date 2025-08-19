@@ -37,8 +37,8 @@ playButton.classList.remove("link");
 playButton.classList.remove("Playbtn");
 
 rockButton1.addEventListener("click", () => {
-    RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
-    LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+    RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
+    LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
     rockButton1.style.backgroundColor = "rgba(84, 160, 97, 1)";
     paperButton1.style.backgroundColor = "rgba(252, 252, 252, 1)";
     scissorsButton1.style.backgroundColor = "rgba(252, 252, 252, 1)";
@@ -51,8 +51,8 @@ rockButton1.addEventListener("click", () => {
 });
 
 paperButton1.addEventListener("click", () => {
-    RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
-    LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+    RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
+    LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
     rockButton1.style.backgroundColor = "rgba(252, 252, 252, 1)";
     paperButton1.style.backgroundColor = "rgba(84, 160, 97, 1)";
     scissorsButton1.style.backgroundColor = "rgba(252, 252, 252, 1)";
@@ -65,8 +65,8 @@ paperButton1.addEventListener("click", () => {
 });
 
 scissorsButton1.addEventListener("click", () => {
-    RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
-    LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+    RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
+    LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
     rockButton1.style.backgroundColor = "rgba(255, 255, 255, 1)";
     paperButton1.style.backgroundColor = "rgba(252, 252, 252, 1)";
     scissorsButton1.style.backgroundColor = "rgba(84, 160, 97, 1)";
@@ -168,8 +168,8 @@ playButton.addEventListener("click", () => {
 
     RightPlayer.classList.add("animate");
     LeftPlayer.classList.add("animate");
-    RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
-    LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+    RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
+    LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
 
     playButton.classList.add("no-link");
     playButton.classList.remove("link");
@@ -199,19 +199,19 @@ playButton.addEventListener("click", () => {
         }
 
         if (player1Choice === "|R|") {
-            LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+            LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
         } else if (player1Choice === "|P|") {
-            LeftPlayer.src = "../img/paper/no-bg-2/paper-right-no-bg-2.png";
+            LeftPlayer.src = "../img/paper/no-bg/paper-right-no-bg.png";
         } else if (player1Choice === "|S|") {
-            LeftPlayer.src = "../img/scissors/no-bg-2/scissors-right-no-bg-2.png";
+            LeftPlayer.src = "../img/scissors/no-bg/scissors-right-no-bg.png";
         }
 
         if (player2Choice === "|R|") {
-            RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
+            RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
         } else if (player2Choice === "|P|") {
-            RightPlayer.src = "../img/paper/no-bg-2/paper-left-no-bg-2.png";
+            RightPlayer.src = "../img/paper/no-bg/paper-left-no-bg.png";
         } else if (player2Choice === "|S|") {
-            RightPlayer.src = "../img/scissors/no-bg-2/scissors-left-no-bg-2.png";
+            RightPlayer.src = "../img/scissors/no-bg/scissors-left-no-bg.png";
         }
 
         ScoreText.textContent = `${player1} x ${player2}`;
@@ -245,8 +245,8 @@ function clearLog() {
     ResultText.classList.remove("log-P1-win");
     ResultText.classList.remove("log-P2-win");
     ResultText.classList.remove("log-draw");
-    RightPlayer.src = "../img/rock/no-bg-2/rock-left-no-bg-2.png";
-    LeftPlayer.src = "../img/rock/no-bg-2/rock-right-no-bg-2.png";
+    RightPlayer.src = "../img/rock/no-bg/rock-left-no-bg.png";
+    LeftPlayer.src = "../img/rock/no-bg/rock-right-no-bg.png";
     rockButton1.style.backgroundColor = "rgba(255, 255, 255, 1)";
     paperButton1.style.backgroundColor = "rgba(252, 252, 252, 1)";
     scissorsButton1.style.backgroundColor = "rgba(252, 252, 252, 1)";
@@ -268,3 +268,9 @@ function home() {
         window.location.href = "../Rindex.html";
     }, 1050);
 }
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" || event.key === "Esc") {
+        home();
+    }
+});

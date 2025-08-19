@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Windexstyle.css">
+    <link rel="stylesheet" href="../SHARED/fadeOverlayStyle.css">
+    <link rel="icon" type="image/x-icon" href="img/tic-tac-toe.png">
+    <title>Whack-A-Mole</title>
+</head>
+
+<body>
+    <div class="CustomNav">
+        <a onclick="home()" class="sound-class">
+            <img src="../SHARED/SHARED-IMG/icons/exit.png" alt="Exit icon" id="exitIcon">
+        </a>
+        <h1>Choose A Gamemode <span id="smallTitle">(WHACK-A-MOLE)</span></h1>
+        <a onclick="speakerIndex()" class="sound-class">
+            <img src="../SHARED/SHARED-IMG/icons/muteBtn.png" alt="Speaker icon" id="speakerIcon">
+        </a>
+    </div>
+
+    <div class="OuterContainer" id="outerContainerID">
+        <div class="LeftContainer">
+            <button class="GamemodeBtn sound-class" id="EasyBtn" disabled>
+                <h1 class="BtnText">Easy</h1>
+            </button>
+        </div>
+        <div class="MiddleContainer">
+            <button class="GamemodeBtn sound-class" id="NormalBtn" disabled>
+                <h1 class="BtnText">NORMAL</h1>
+            </button>
+        </div>
+        <div class="RightContainer">
+            <button class="GamemodeBtn sound-class" id="HardBtn" disabled>
+                <h1 class="BtnText">HARD</h1>
+            </button>
+        </div>
+        <h3 id="loading">Loading<span class="dots"></span></h3>
+        <button id="Playbtn" class="sound-class" disabled>Play</button>
+    </div>
+
+    <div id="fadeOverlay" class="fade-in-start"></div>
+
+    <audio id="clickSound" src="../SHARED/sfx/click.mp3" preload="auto"></audio>
+    <audio id="BgMusic" src="../SHARED/sfx/menu-bg-music.mp3" preload="auto"></audio>
+    <script src="js/Windexscr.js"></script>
+    <script src="../SHARED/audioscr.js"></script>
+    <script src="../SHARED/fadeOverlayscr.js"></script>
+</body>
+
+</html>

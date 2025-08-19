@@ -60,7 +60,8 @@ h2 {
 }
 
 .innerContainer1,
-.innerContainer2 {
+.innerContainer2,
+.innerContainer3 {
     height: 250px;
     width: 800px;
     margin: 20px auto;
@@ -81,8 +82,13 @@ h2 {
     background-color: rgb(74, 76, 139);
 }
 
+.innerContainer3 {
+    background-color: rgb(158, 99, 64);
+}
+
 #Rbtn,
-#Tbtn {
+#Tbtn,
+#Wbtn {
     width: 100%;
     height: 100%;
     border: none;
@@ -98,14 +104,17 @@ h2 {
 }
 
 #Rbtn:hover,
-#Tbtn:hover {
+#Tbtn:hover,
+#Wbtn:hover {
     background-color: rgba(0, 0, 0, 0.26);
     color: white;
 }
 
 .X,
 .O,
-.RPS-image {
+.RPS-image,
+.Mole,
+.Hammer {
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -123,12 +132,31 @@ h2 {
     -o-transform: rotate(-45deg);
 }
 
+.Mole {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.Hammer {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
 .Rrow,
-.Trow {
+.Trow,
+.Wrow {
     margin: 10px;
 }
 
-.innerContainer1:hover .RPS-image {
+.innerContainer1:hover .RPS-image,
+.innerContainer3:hover .Mole,
+.innerContainer3:hover .Hammer {
     transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);
@@ -146,7 +174,8 @@ h2 {
 }
 
 .innerContainer1:hover h2,
-.innerContainer2:hover h2 {
+.innerContainer2:hover h2,
+.innerContainer3:hover h2 {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.1) rotate(3deg);
 }

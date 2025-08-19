@@ -4,7 +4,7 @@
 }
 
 html {
-    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel.cur) 1 1, auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -84,7 +84,7 @@ h1 {
     border-color: rgb(138, 138, 130);
     border-radius: 20px;
     border-width: 1px;
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
 }
 
 .GamemodeBtn:hover {
@@ -162,11 +162,11 @@ h1 {
 }
 
 .no-link {
-    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel.cur) 1 1, auto;
 }
 
 .link {
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
 }
 
 #exitIcon,
@@ -180,7 +180,7 @@ h1 {
 
 #exitIcon:hover,
 #speakerIcon:hover {
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
     background-color: rgba(102, 102, 102, 0.76);
 }
 

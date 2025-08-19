@@ -4,7 +4,7 @@
 }
 
 html {
-    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel.cur) 1 1, auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -28,7 +28,7 @@ body {
 
 .gameCubes {
     transition: background-color 0.3s;
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
     font-family: 'pixel', monospace;
 }
 
@@ -200,7 +200,7 @@ h1 {
     padding: 2px 4px;
     font-family: monospace;
     color: rgb(212, 212, 212);
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
 }
 
 .reset:hover {
@@ -266,14 +266,14 @@ h1 {
 
 #exitIcon:hover,
 #speakerIcon:hover {
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
     background-color: rgba(102, 102, 102, 0.76);
 }
 
 .no-link {
-    cursor: url(../img/cursor/pixel.cur) 1 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel.cur) 1 1, auto;
 }
 
 .link {
-    cursor: url(../img/cursor/pixel_link.cur) 8 1, auto;
+    cursor: url(../../SHARED/SHARED-IMG/cursor/pixel_link.cur) 8 1, auto;
 }
