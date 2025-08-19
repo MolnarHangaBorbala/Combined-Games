@@ -16,6 +16,17 @@ Check it out here: [combined-games.netlify.app](https://combined-games.netlify.a
 - **Sound & Music**: Enjoy background music and effects that make each move feel satisfying.
 - **Non-Responsive**: Works great on desktop.
 
+### Games
+
+- **Tic-Tac-Toe**
+- **Rock-Paper-Scissors**
+- ~~**Whack-a-Mole**~~
+- ~~**Memory-(Pair-Matching)**~~
+- ~~**Snake-Game**~~
+- ~~**Simon-Says-(Memory-Sequence)**~~
+- ~~**Pong**~~
+- ~~**Tetris**~~
+
 ## 🚀 How to Play Locally
 
 1. Clone this repo:
