@@ -218,6 +218,10 @@ h1 {
     max-height: 100px;
 }
 
+.mole:hover {
+    opacity: 0.9;
+}
+
 .moleDiv {
     max-width: 100px;
     max-height: 100px;
