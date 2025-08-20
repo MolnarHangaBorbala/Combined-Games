@@ -20,7 +20,7 @@ Check it out here: [combined-games.netlify.app](https://combined-games.netlify.a
 
 - **Tic-Tac-Toe**
 - **Rock-Paper-Scissors**
-- ~~**Whack-a-Mole**~~
+- **Whack-a-Mole**
 - ~~**Memory-(Pair-Matching)**~~
 - ~~**Snake-Game**~~
 - ~~**Simon-Says-(Memory-Sequence)**~~
